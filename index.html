@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet"  href="style.css">
+        <script src="https://kit.fontawesome.com/f69c2bce58.js"></script>
+    </head>  
+    <body>  
+        <div class="game_container">
+            <div class="title">
+                <h1>Rock Paper Scissors</h1>
+            </div>
+            <div class="main_container">
+                <p class="rules" id="result">Make a choice:</p>
+                <div class="items">
+                  <i class="fas fa-hand-rock item" id="rock" alt="rock"></i>
+                  <i class="fas fa-hand-paper item"  id="paper" alt="paper"></i>
+                  <i class="fas fa-hand-scissors item" id="scissors" alt="scissors"></i>
+                </div>
+                <div class="score">
+                    <p>Player: <span id="playerScore">0</span></p>
+                    <p>Ties: <span id="tieScore">0</span></p>
+                    <p>Computeur: <span id="computerScore">0</span></p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector("#rock"), {
+                max: 20,
+                speed: 400,
+                glare: true,
+                "max-glare":0.2,
+            });
+            VanillaTilt.init(document.querySelector("#paper "), {
+                max: 20,
+                speed: 400,
+                glare: true,
+                "max-glare":0.2,
+            });
+            VanillaTilt.init(document.querySelector("#scissors"), {
+                max: 20,
+                speed: 400,
+                glare: true,
+                "max-glare":0.2,
+            });
+        </script>
+        <script type = "text/javascript" src="function.js"></script> 
+    </body>  
+</html>  

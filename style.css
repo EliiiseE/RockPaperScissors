@@ -1,0 +1,146 @@
+@import url(//db.onlinewebfonts.com/c/5ef8a424b69b83d12929ade2aae274d7?family=Avenir+Next+Ultra+Light);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    min-height: 100vh;
+    background: #091921;
+}
+
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f7dd4f,#FDA032,#B64F36,#802626);
+    clip-path: circle(17% at 23% 20%);
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#524BFF,#8536B6,#CE275B,#FF1D1D);
+    clip-path: circle(17% at 77% 90%);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title h1{
+    margin-top:5%;
+    z-index: 1;
+    font-family: 'Alexana Neue', sans-serif;
+    font-size: 90px;
+    color: white;
+
+}
+
+.main_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 106px;
+}
+
+.main_container .rules{
+    z-index: 1;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    color: white;
+    font-family: "Avenir Next Ultra Light"; src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot");
+    src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.svg#Avenir Next Ultra Light") 
+    format("svg"); }
+
+
+.main_container .items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3%;
+}
+.main_container .items .item{
+   
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+    color: white;
+    font-size: 80px;
+    padding: 5%;
+    margin: 2%;
+}
+
+.main_container .items .item.error{
+    color: #E53E3E;
+}
+
+.main_container .items .item.success{
+    color: #76FF5D;
+}
+
+.main_container .items .item:hover{
+    background: rgba(255,255,255,0.05);
+    transition: 0.50s;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+.main_container .items .item:active{
+    background:#14ff47;
+    color:#192f00;
+    font-size: 80px;
+}
+
+.main_container .score{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.main_container .score p{
+    z-index: 1;
+    font-family: 'Avenir Next', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+    font-family: "Avenir Next Ultra Light"; src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot");
+    src: url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/5ef8a424b69b83d12929ade2aae274d7.svg#Avenir Next Ultra Light") 
+    format("svg"); }
+    
+
+
+
